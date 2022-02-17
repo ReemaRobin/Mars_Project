@@ -75,12 +75,12 @@ namespace Project_Mars.Specflow
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Add Education to Profile")]
-        [NUnit.Framework.CategoryAttribute("tag1")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
         [NUnit.Framework.TestCaseAttribute("India", "UC", "B.Tech", "Computer Science Engineering", "2016", null)]
         public virtual void AddEducationToProfile(string country, string university, string title, string degree, string year, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "tag1"};
+                    "mytag"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));

@@ -2,7 +2,7 @@
 
 Seller is able to add Education to profile page
 
-@tag1
+@mytag
 Scenario Outline: Add Education to Profile
 	Given Navigate to Education tab
 	When I add '<Country>' and '<University>' and '<Title>' and '<Degree>' and '<Year>' to Education tab

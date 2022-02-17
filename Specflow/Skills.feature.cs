@@ -75,13 +75,13 @@ namespace Project_Mars.Specflow
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("1 Add skills to Profile")]
-        [NUnit.Framework.CategoryAttribute("tag1")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
         [NUnit.Framework.TestCaseAttribute("Java", "Intermediate", null)]
         [NUnit.Framework.TestCaseAttribute("C#", "Beginner", null)]
         public virtual void _1AddSkillsToProfile(string skill, string skillLevel, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "tag1"};
+                    "mytag"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -125,13 +125,13 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("2  update skills in Profile page")]
-        [NUnit.Framework.CategoryAttribute("tag1")]
+        [NUnit.Framework.DescriptionAttribute("2 Update skills in Profile page")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
         [NUnit.Framework.TestCaseAttribute("Automation", "Intermediate", null)]
         public virtual void _2UpdateSkillsInProfilePage(string skill1, string skillLevel1, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "tag1"};
+                    "mytag"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -140,7 +140,7 @@ this.ScenarioInitialize(scenarioInfo);
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("Skill1", skill1);
             argumentsOfScenario.Add("SkillLevel1", skillLevel1);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("2  update skills in Profile page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("2 Update skills in Profile page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 18
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -175,12 +175,14 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("3 [delete skills in Profile page]")]
+        [NUnit.Framework.DescriptionAttribute("3 Delete skills in Profile page")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
         public virtual void _3DeleteSkillsInProfilePage()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("3 [delete skills in Profile page]", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("3 Delete skills in Profile page", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 27
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
